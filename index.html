@@ -7,8 +7,28 @@
         <link rel="icon" href="https://www.dl.kasra071.com/MyFiles/meter.png">
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body onload="load()">
         <h1>Calorie Counter</h1>
         <h5>all the data is stored inside your browser.</h5>
+        <div class="buttons_container">
+            <button onclick="ate()">i ate food +</button>
+            <button onclick="bur()">i burned calorie -</button>
+        </div>
+        <button class="clear_button" onclick="clearItems()">clear</button>
+        <div id="add_bur_cont">
+
+        </div>
+
+        <h2>total calories today : <span id="total"></span></h2>
+        <table>
+            <tbody id="ate_data">
+                <tr>
+                    <td><span>name</span></td>
+                    <td><span>calories</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+
     </body>
 </html>

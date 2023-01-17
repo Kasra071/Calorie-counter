@@ -1,15 +1,140 @@
 @font-face {
     font-family: opensans;
-    src: url(https://v3.kasra071.com/src/fonts/OpenSans-Regular.ttf);
+    src: url(./fonts/OpenSans-Regular.ttf);
 }
 @font-face {
     font-family: cmd;
-    src: url('https://v3.kasra071.com/src/fonts/consola.ttf');
+    src: url(./fonts/consola.ttf);
+}
+@font-face {
+    font-family: comicsans;
+    src: url(./fonts/comic-sans.ttf);
 }
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
+    font-family: opensans;
+    background: #4776e6;
+    background: linear-gradient(45deg, #4776e6 0%, #8e54e9 100%);
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+h5{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
     font-family: cmd;
+}
+
+h2{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: cmd;
+}
+.buttons_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+.buttons_container button{
+    width: 48%;
+    height: 35px;
+    font-family: comicsans;
+    font-size: 17px;
+    background-color: white;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+.buttons_container button:hover{
+    background-color: #ddd;
+}
+
+.clear_button{
+    appearance: none;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(165, 0, 0);
+    color: white;
+    font-size: 14px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-family: comicsans;
+}
+
+#add_bur_cont{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;
+    padding: 10px;
+}
+#add_bur_cont p{
+    font-size: 16px;
+    text-align: center;
+}
+
+#add_bur_cont button{
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 2px 6px;
+    font-family: comicsans;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #4776e6;
+    color: white;
+}
+
+.inp_con{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.inp_con input{
+    font-size: 17px;
+    width: 40%;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 5px gray;
+}
+
+table{
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+}
+
+table tr{
+    box-shadow: 0 0 10px gray;
+}
+
+
+table tr td span{
+    margin-left: 30px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+table tr td:first-child span{
+    font-size: 17px;
+    margin-left: 0px;
 }
