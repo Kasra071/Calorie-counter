@@ -1,0 +1,15 @@
+@font-face {
+    font-family: opensans;
+    src: url(https://v3.kasra071.com/src/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: cmd;
+    src: url('https://v3.kasra071.com/src/fonts/consola.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: cmd;
+}
