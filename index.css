@@ -19,6 +19,8 @@ body{
     background: #4776e6;
     background: linear-gradient(45deg, #4776e6 0%, #8e54e9 100%);
     color: white;
+    max-width: 600px;
+    margin: auto;
 }
 h1{
     text-align: center;
